@@ -1,9 +1,9 @@
-# Getting Started with My Cellar
+# My Cellar APP
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-
-![UI My Cellar](/frontend.png?raw=true "UI My Cellar")
+### UI
+![UI My Cellar](https://github.com/gustavopalminha/my-cellar/blob/main/frontend.PNG)
 
 ## Available Scripts
 
