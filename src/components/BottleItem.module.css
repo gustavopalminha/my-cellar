@@ -1,0 +1,26 @@
+.bottleitem {
+  border: 1px solid #ddd;
+  margin: 1rem 0;
+  background-color: #f7f5ef;
+  padding: 1rem;
+  font-size: 18px;
+  color: black;
+  display: block;
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bottleitem:hover {
+  background-color: #eee;
+}
+
+.delete {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 1rem;
+  transform: translate(0%, -50%);
+}
+
+

@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Getting Started with My Cellar
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+![UI My Cellar](/frontend.png?raw=true "UI My Cellar")
 
 ## Available Scripts
 
@@ -14,11 +17,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -29,18 +27,12 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Architecture considerations
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Part of this CSS was adapted from previous work I did while learning React so I din't write all of it.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I've used context provider because I wanted a centralized place for context management and for this simple app this is enough.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This version is not saving data in a database by calling APIs. When implementing this, I would create a centralizes component client to handle all the API calls, GET, POST, ...
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Considering the 4h limit I've skipped unit tests but I would use Jest with react testing library to create them.
